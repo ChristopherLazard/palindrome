@@ -2,10 +2,11 @@ def menu
   puts
   puts
   puts "Enter a word to see if it is a palindrome!"
+  puts "Do not use special characters!"
   puts
   puts
   puts "Type 'Quit' to exit."
-  word = gets.strip
+  word = gets.gsub(/\s+/, "")
 
   case word
     when "quit"
