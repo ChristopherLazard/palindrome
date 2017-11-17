@@ -6,7 +6,7 @@ def menu
   puts
   puts
   puts "Type 'Quit' to exit."
-  word = gets.gsub(/\s+/, "")
+  word = gets.gsub(/\s+/, "").downcase
 
   case word
     when "quit"
